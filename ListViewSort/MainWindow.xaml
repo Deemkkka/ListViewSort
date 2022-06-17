@@ -22,12 +22,14 @@
         </ListView>
 
         <ComboBox x:Name="comboBoxChooseTopic"
+                  SelectedIndex="0"
                 HorizontalAlignment="Left"
                   VerticalAlignment="Top"
                   Margin="10, 15, 0, 0"
                   Width="150"/>
 
         <ComboBox x:Name="comboBoxSortAscDesc"
+                  SelectedIndex="0"
                 HorizontalAlignment="Left"
                   VerticalAlignment="Top"
                   Margin="200, 15, 0, 0"
