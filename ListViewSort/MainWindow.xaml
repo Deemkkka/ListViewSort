@@ -7,6 +7,30 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <ListView x:Name="ListViewData"
+                  Margin="0, 50, 0, 0">
+            <ListView.View>
+                <GridView>
+                    <GridView.Columns>
+                        <GridViewColumn Header="Name" DisplayMemberBinding="{Binding name}"/>
+                        <GridViewColumn Header="Country" DisplayMemberBinding="{Binding country}"/>
+                        <GridViewColumn Header="Age" DisplayMemberBinding="{Binding age}"/>
+                    </GridView.Columns>
+                </GridView>
+            </ListView.View>
+            
+        </ListView>
 
+        <ComboBox x:Name="comboBoxChooseTopic"
+                HorizontalAlignment="Left"
+                  VerticalAlignment="Top"
+                  Margin="10, 15, 0, 0"
+                  Width="150"/>
+
+        <ComboBox x:Name="comboBoxSortAscDesc"
+                HorizontalAlignment="Left"
+                  VerticalAlignment="Top"
+                  Margin="200, 15, 0, 0"
+                  Width="150"/>
     </Grid>
 </Window>
